@@ -1,2 +1,2 @@
 # rs-chrome-plugin
-chrome plugin provides installation verification
+chrome plugin provides installation verification for RS

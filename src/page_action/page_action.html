@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div id="header-inner">
+        <div class="logo">
+          <img src="images/importlineup.png" alt="logo" />
+        </div>
+        <div class="info">
+          <a href="#" data-toggle="tooltip" data-placement="left"  title="Select a CSV file to upload. Must have an ID column with the player IDs and an empty row separating each lineup. To change sports click create new lineup and choose a different sport and time. It will automatically be reflected in this window after you click continue. &copy;2015 Buildcave, LLC"><i class="icon-info-sign"></i></a>
+        </div>
+
+     </div>
+   </header>
+   
+    <section id="sport-time-container">
+      <div class="row">
+        <div id="sport-label-container">
+          <h3 style="margin-left: 10px;">currently importing lineups for:</h3>
+          <h2 style="padding-top: 5px; margin-bottom: 5px">
+            <div style="display:inline; margin-left: 10px;"><img id="sport-icon" src="images/icon-pga.png" /></div>
+            <div id="sport" class="sport-label" style="display:inline;"></div>
+            <div style="display:inline;"><span id="start-date" class="pull-right" style="margin-right: 15px; color:#ff9700"></span></div>
+          </h2>
+          <a href="#" style="margin-left: 10px" id="download-players">Download Players</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="file" name="file" accept=".csv" style="visibility:hidden;" id="csv" /><br/>
+          <div class="input-append" style="margin-left: 10px">
+              <h3>Select a file:</h3>
+
+              <input type="text" name="subfile" id="subfile" class="input-xlarge">
+              <a class="btn upload-csv">Browse</a>
+          </div>
+        </div>
+      </div>
+            
+
+        <button class="button btn btn-success" style="margin-left: 10px; margin-top: 5px" id="import-lineup">
+          Import
+        </button>
+      </div>
+
+    </section>
+
+
+
+    <script src="../../js/jquery/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="../../js/moment/moment.js"></script>
+    <script src="../../js/FileSaver.min.js"></script>
+    <script src="js/popup.js"></script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,122 @@
+html{
+  height: 280px;
+  width: 255px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222 url("../images/black-transparent.png") repeat top left;
+  height: 280px;
+  width: 255px;
+
+}
+
+header #header-inner {
+  height: 60px !important;
+  background-color: #212122;
+  border-bottom: 3px solid #767577;
+  position: relative;
+  color: #fff;
+}
+header #header-inner h3 {
+  margin-left: 15px;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+header #header-inner img {
+  margin-left: 5px;
+}
+
+.logo {
+  float: left;
+  width: 225px;
+}
+
+.info a {
+  outline: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  text-decoration: none;
+}
+
+.hidden {
+  /*display: none;*/
+}
+.sport-logo {
+  background: transparent url("../images/icon-pga.png") no-repeat 0 2px;
+}
+
+#sport-time-container {
+  
+  /*height: 170px;*/
+}
+
+#sport-label-container {
+  padding-top: 10px;
+
+}
+#sport-label-container h2 {
+  /*padding-left: 10px;*/
+  margin-top: 0; padding-top: 0;
+  position: relative;
+  font: 24px/24px "nimbus", "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial Black", Arial, "Lucida Grande", sans-serif;
+  color: #cdd1c0;
+  text-transform: uppercase;
+
+}
+
+#sport-label-container h2 > div.sport-label {
+  color: #cdd1c0;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9a9e8d));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #9a9e8d 100%);
+  -webkit-background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  /*position: absolute;*/
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+ h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0px 0px 5px 0px;
+  font: 15px/12px "nimbus", "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial Black", Arial, "Lucida Grande", sans-serif;
+  text-shadow: 1px 1px #000;
+}
+
+#upload-container {
+  border-top: 3px solid #222;
+  background: transparent url("../images/table-border.png") right top repeat-y;
+}
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
