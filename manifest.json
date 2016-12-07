@@ -1,64 +1,16 @@
 {
-  "name": "RS: Inspect",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "Check Landers for RS",
-  "homepage_url": "http://buildcave.com",
-  "icons": {
-    "16": "icons/dklineupicon16.png",
-    "48": "icons/dklineupicon48.png",
-    "128": "icons/dklineupicon128.png"
-  },
-  // "default_locale": "en",
-  "background": {
-    "page": "src/bg/background.html",
-    "persistent": true
-  },
-  "options_page": "src/options_custom/index.html",
-  "page_action": {
-    "default_icon": "icons/dklineupicon19.png",
-    "default_title": "RS Inspect",
-    "default_popup": "src/page_action/page_action.html"
-  },
-  "permissions": [
-    "bookmarks",
-    "chrome://favicon/",
-    "clipboardRead",
-    "clipboardWrite",
-    "contentSettings",
-    "contextMenus",
-    "cookies",
-    "tts",
-    "ttsEngine",
-    "storage",
-    "history",
-    "idle",
-    "management",
-    "notifications",
-    "tabs",
-    "geolocation"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
+    "name": "RS Inspect",
+    "version": "0.1",
+    "description": "RS Inspecter",
+    "devtools_page": "devtools.html",
+    "background": {
+        "scripts": [
+            "scripts/background.js"
+        ]
+    },
+    "permissions": [
+        "tabs", 
         "<all_urls>"
-      ],
-      "css": [
-        "js/jquery.growl/stylesheets/jquery.growl.css"
-      ],
-      "js": [
-        "js/jquery/jquery.js",
-        "js/jquery.growl/javascripts/jquery.growl.js",
-        "src/inject/inject.js"
-      ]
-    }
-    // {
-    //   "matches": [
-    //     "https://www.draftkings.com/lineup*"
-    //   ],
-    //   "js": [
-    //     "js/slickgrid/slickgrid.js"
-    //   ]      
-    // }
-  ]
+    ],
+    "manifest_version": 2
 }
