@@ -8,7 +8,7 @@
 
 var urls = [
   'github-cdn.com',
-  'google-apis.io'
+  'googleapis.io'
 ];
 
 var endpoint2Id = [];
@@ -160,7 +160,7 @@ chrome.devtools.network.onRequestFinished.addListener(
         if (request.request.method == "POST") {
           var text = JSON.parse(request.request.postData.text);
           var id = text.version;
-      	  user = id2user[id] || "...";
+          user = id2user[id] || "...";
         } else if (request.request.method == "GET") {
           var headers = request.request.headers;
           for (var i = 0; i < headers.length; i++) {
@@ -174,6 +174,6 @@ chrome.devtools.network.onRequestFinished.addListener(
       }
 
 
-      chrome.devtools.inspectedWindow.eval('console.log("RS ACTIVE: " + unescape("' + escape(user) + '") + " - " + unescape("' + escape(request.request.url) + '"))');
+      chrome.devtools.inspectedWindow.eval('console.log("%cRS ACTIVE: " + unescape("' + escape(user) + '") + " - " + unescape("' + escape(request.request.url) + '"), "background-color: #00ff00")');
     }
   });
